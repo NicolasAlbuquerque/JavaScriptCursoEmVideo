@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body{
+        background-color: blueviolet;
+        color: aliceblue;
+        font: bold 30px Arial;
+        
+    }
+</style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Iniciando estudos com Dom</h1>
+    <p>primeiros passos com o <strong>DOM</strong>.</p>
+<p>Aprendendo a usar o <strong> Dom</strong></strong> com <strong>JavaScript</strong></p>
+
+<div>
+<img src="assets/Screenshot_1.png" alt="">
+</div>
+
+<h2>Acrônimo para DOCUMENT OBJECT MODEL </h2>
+<p>modelo de objeto para documento, basicamete é um  conjunto de objetos dentro do navegador que da acesso aos componentes internos do seu website</p>
+
+
+<h3>
+    qualquer item da arvore DOM é um elemento   </h3>
+   <p> posso selecionar os elementos para navegar pela arvore DOM
+</p>
+    <h4>Podendo acessar: </h4> 
+    <ol>
+        <li> por marca</li>
+            <p>getElementsByTagName()</p>
+        <li>por id</li>
+            <p>getElementById()</p>
+        <li>por nome</li>
+        <p>getElementsByName()</p>
+        <li>por classe</li>
+        <p>getElmentsByClasseName()</p>
+        <li>por seletor</li>
+        
+        <p>querySelector()</p>
+        <p>querySelectorAll()</p>
+    </ol>
+   
+     
+    
+
+    <div id="msg">
+        clique em mim
+    </div>
+
+    <script>
+        window.document.write('olá mundo <br>')
+        
+        
+        window.document.write(window.document.characterSet)
+        window.document.write(' <br>')
+        window.document.write(window.document.URL)
+        window.document.write(' <br>')
+        window.document.write(window.navigator.appCodeName)
+            var p1= window.document.getElementsByTagName('p')[4]
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        p1.style.color='yellow'
+
+        var corpo = window.document.body
+
+        corpo.style.backgroundColor='black'
+
+        var d = window.document.getElementById('msg')
+
+        d.style.backgroundColor='yellow'
+       // d.innerText='estou aguardando'
+       window.document.getElementById('msg').innerText='ola mundo '
+        var div = window.document.querySelector('div#msg')
+        div.style.color ='blue'
+
+    </script>
+
+
+
+        
+ 
+
+</body>
+</html>

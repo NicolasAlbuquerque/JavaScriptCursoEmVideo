@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Países</h1>
+    País de origem: <input type="text" name="pais"  id='pais' >
+    <input type="button" value="enviar"onclick="verificar()">
+    <div id="res"></div>
+
+
+    <script>
+        function verificar(){
+            var pais=window.document.querySelector('input#pais')//aqui estou pgeando o que o usuário digitar.
+            
+
+            //adicionando o valor do que foi digitado a uma variavel
+            var origem=(pais.value)
+            console.log(origem)
+            //acessando o DOM           
+            var res = window.document.querySelector('div#res')
+            //exibindo na tela o que foi digitado
+            res.innerHTML=`<p>Seu País de origem é ${origem}</p>`
+
+            if(origem !== "Brasil"){
+                res.innerHTML+= "Você é Estrangeiro"
+            }else{
+                res.innerHTML+= 'Você é Brazuca'
+            }
+
+        }
+    </script>
+</body>
+</html>

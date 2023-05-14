@@ -1,0 +1,2 @@
+um array ou vetor é uma varive com varios elementos
+cadfa elemento é composto pelo seu valor e por uma chave de identificação.
